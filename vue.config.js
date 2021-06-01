@@ -53,8 +53,17 @@ module.exports = {
       }]);
     }
   },
+
+  // eslint-disable-next-line no-unused-vars
   configureWebpack: config => {
-    console.log(config);
+    // console.log(config);
+    return {
+      externals: {
+        vue: 'Vue',
+        'vue-router': 'VueRouter',
+        axios: 'axios'
+      }
+    };
   },
   css: {
     extract: true,
