@@ -58,9 +58,10 @@ module.exports = {
   configureWebpack: config => {
     // console.log(config);
     return {
-      externals: {
+      externals: { // key 是from的库名  value 是实际使用的名称
         vue: 'Vue',
         'vue-router': 'VueRouter',
+        vuex: 'Vuex',
         axios: 'axios'
       }
     };
