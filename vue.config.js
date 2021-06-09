@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   publicPath: './',
-  outputDir: 'dis',
+  outputDir: 'build',
   lintOnSave: false, // 编译时eslint校验
   runtimeCompiler: true,
   pages: {
